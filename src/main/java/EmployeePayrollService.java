@@ -14,7 +14,7 @@ public class EmployeePayrollService {
     }
 
     /**
-     * Read Employee Payroll Data
+     * Read Employee Payroll
      * @param inputRead
      */
     void readEmployeePayroll(Scanner inputRead) {
