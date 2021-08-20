@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.stream.IntStream;
 
 public class IOFileAPITest {
@@ -56,7 +57,7 @@ public class IOFileAPITest {
                 .forEach(System.out::println);
     }
 
-    // Create File
+    // List Files
     @Test
     public void listFilesDirectoriesAsWellAsFilesWithExtension() throws IOException{
         Path playPath = Paths.get(HOME+"/"+PLAY_WITH_NIO);
@@ -74,6 +75,13 @@ public class IOFileAPITest {
         Files.newDirectoryStream(playPath, path ->  path.toFile().isFile() &&
                 path.toString().startsWith("temp"))
                 .forEach(System.out::println);
+    }
+
+    @Test
+    public void checkBDEmployeeMatchCount(){
+        EmployeePayrollService empservice = new EmployeePayrollService();
+        List<EmployeePayroll> employeePayrolls = empservice.readEmployeePayrollFromDB();
+        Assertions.assertEquals(3, employeePayrolls.size());
     }
 
 
