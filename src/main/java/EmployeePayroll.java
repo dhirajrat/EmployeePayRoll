@@ -9,6 +9,10 @@ public class EmployeePayroll {
         this.salary = salary;
     }
 
+    /**
+     * ToString Method
+     * @return
+     */
     @Override
     public String toString() {
         return "EmployeePayroll{" +
