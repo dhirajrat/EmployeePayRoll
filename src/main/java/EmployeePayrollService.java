@@ -48,6 +48,10 @@ public class EmployeePayrollService {
 
     }
 
+    /**
+     * Read Employee Payroll DB
+     * @return
+     */
     public List<EmployeePayroll>  readEmployeePayrollFromDB(){
             List<EmployeePayroll> listOfEmp = new ArrayList<>();
             String sqlQuery = "SELECT * from employeepayroll";
