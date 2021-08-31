@@ -4,11 +4,11 @@ FileUtils.java
  FileUtils
 IOService.java
  IOService
-EmployeePayroll.java
- EmployeePayroll
-EmployeePayrollServiceIOService.java
- EmployeePayrollServiceIOService
 Main.java
  Main
+EmployeePayrollServiceIOService.java
+ EmployeePayrollServiceIOService
+EmployeePayroll.java
+ EmployeePayroll
 EmployeePayrollService.java
  EmployeePayrollService

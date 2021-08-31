@@ -12,6 +12,10 @@ public class EmployeePayrollServiceIOService {
     private static String PAYROLL_FILE_NAME = "payroll_file.txt";
     Path path = Paths.get(HOME+"/"+PAYROLL_FOLDER_NAME+"/"+PAYROLL_FILE_NAME);
 
+    /**
+     * Write Data
+     * @param employeePayrollList
+     */
     public void writeData(List<EmployeePayroll> employeePayrollList) {
 
         if(Files.exists(path)){ path.toFile().delete();}
